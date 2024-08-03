@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.navbar {
+    width: 100%;
+    padding: 10px; /* Menor padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffcc00; /* Linha inferior mais fina */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Menos sombra */
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.navbar-title {
+    color: #ffcc00;
+    font-size: 1.5rem; /* Menor tamanho de fonte */
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 1px 1px 0 #000; /* Efeito pixelado reduzido */
+    animation: retroText 1.5s infinite alternate; /* Animação retro */
+}
+
+@keyframes retroText {
+    0% {
+        color: #ffcc00;
+        text-shadow: 3px 3px #000, -1px -1px #ff0000, 1px -1px #00ff00, -1px 1px #0000ff, 1px 1px #ff00ff;
+    }
+    50% {
+        color: #00ff00;
+        text-shadow: 3px 3px #000, -1px -1px #0000ff, 1px -1px #ff00ff, -1px 1px #ff0000, 1px 1px #00ff00;
+    }
+    100% {
+        color: #ff0000;
+        text-shadow: 3px 3px #000, -1px -1px #00ff00, 1px -1px #ff00ff, -1px 1px #0000ff, 1px 1px #ffcc00;
+    }
+}
+
+.navbar a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem; /* Menor tamanho de fonte */
+    text-shadow: 1px 1px 0 #000; /* Efeito pixelado */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00ff00; /* Cor de hover para efeito retro */
+    text-shadow: 1px 1px 0 #ff0000, -1px -1px 0 #00ff00, 1px -1px 0 #0000ff, -1px 1px 0 #ff00ff;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 8px; /* Menor espaço entre botões */
+}
+
+.nav-button {
+    padding: 8px 16px; /* Menor padding */
+    border: 2px solid #ffcc00; /* Borda pixelada */
+    border-radius: 3px; /* Menor borda */
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffcc00;
+    font-size: 0.9rem; /* Menor tamanho de fonte */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.nav-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}

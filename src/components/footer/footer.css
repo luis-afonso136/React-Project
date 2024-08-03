@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.footer {
+    width: 100%;
+    padding: 10px; /* Menor padding */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 2px solid #ffcc00; /* Linha superior para efeito retro */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 3px 0; /* Menor margem */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem; /* Menor tamanho de fonte */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Menor espaço entre ícones */
+    margin-top: 5px; /* Menor margem superior */
+}
+
+.social-icons a {
+    color: #ffcc00; /* Cor base dos ícones */
+    font-size: 1.2rem; /* Menor tamanho dos ícones */
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #ff0000, 1px -1px 0 #00ff00, -1px 1px 0 #0000ff, 1px 1px 0 #ff00ff; /* Efeito retro pixelado */
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Cor de hover para os ícones */
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #0000ff, 1px -1px 0 #ff00ff, -1px 1px 0 #ff0000, 1px 1px 0 #00ff00; /* Efeito retro para hover */
+}

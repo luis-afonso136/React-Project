@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Menos padding */
+    margin-top: 50px; /* Menos margem superior */
+}
+
+.register-card {
+    background: rgba(34, 34, 34, 0.8); /* Cor de fundo igual ao card da home */
+    padding: 20px; /* Menos padding */
+    border-radius: 10px; /* Bordas mais suaves */
+    backdrop-filter: blur(10px); /* Menos desfocado */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Largura máxima menor */
+    margin-top: 30px;
+}
+
+.register-card h2 {
+    margin-bottom: 10px; /* Menos margem inferior */
+    color: #ffcc00; /* Cor do título */
+    font-size: 1.5rem; /* Menor tamanho do texto */
+    text-shadow: 
+        2px 2px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000; /* Efeito 3D */
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px; /* Menos margem inferior */
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px; /* Menos espaço do lado */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff; /* Cor dos ícones */
+}
+
+.input-container input {
+    width: calc(100% - 45px); /* Ajustado para corresponder ao layout */
+    padding: 10px 10px 10px 35px; /* Menos padding */
+    border: none;
+    border-radius: 5px; /* Menos arredondado */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); /* Menos desfocado */
+    color: #ffffff;
+    outline: none;
+    font-size: 14px; /* Menor tamanho da fonte */
+    font-family: 'Press Start 2P', cursive; /* Fonte retro */
+}
+
+.input-container input::placeholder {
+    color: #ffffff; /* Cor dos placeholders */
+}
+
+button {
+    width: 100%; /* Botão ocupará toda a largura do card */
+    padding: 10px; /* Menos padding */
+    border: none;
+    border-radius: 5px; /* Menos arredondado */
+    background: #ffcc00; /* Cor do botão */
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px; /* Menor tamanho da fonte */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Press Start 2P', cursive; /* Fonte retro */
+}
+
+button:hover {
+    background: #ffd700; /* Cor de hover do botão */
+}
+
+.have-account {
+    margin-top: 15px; /* Menos margem superior */
+}
+
+.have-account p {
+    color: #ffffff;
+}
+
+.have-account a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.have-account a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff0000; /* Vermelho para erros */
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #00ff00; /* Verde para sucesso */
+    margin-top: 10px;
+}
+

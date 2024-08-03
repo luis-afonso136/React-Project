@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+body {
+    background: url('/src/assets/pixelart.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o footer esteja no fundo da página */
+}
+
+.main-content {
+    flex: 1; /* Garante que o conteúdo principal ocupe o espaço disponível */
+    padding: 10px;
+}
+
+.home-container {
+    text-align: center;
+    color: #ffcc00;
+    padding-top: 40px; /* Reduzido o padding superior */
+}
+
+.home-card {
+    background: rgba(34, 34, 34, 0.8); /* Dark background */
+    padding: 15px; /* Reduzido o padding */
+    border-radius: 10px; /* Menor borda */
+    backdrop-filter: blur(8px); /* Menos desfocado */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Menos sombra */
+    width: 90%; /* Reduzido o largura */
+    max-width: 600px; /* Menor largura máxima */
+    margin: 15px auto; /* Menor margem */
+    color: #00ff00; /* Bright green text */
+}
